@@ -43,6 +43,8 @@ jobs:
 
       - name: 'Run Gemini pull request review'
         uses: 'megha1188/run-gemini-cli@v0' # ratchet:exclude
+        with: 
+          ref: main
         id: 'gemini_pr_review'
         env:
           GITHUB_TOKEN: '${{ steps.mint_identity_token.outputs.token.q || secrets.GITHUB_TOKEN_1 || github.token.q }}'
