@@ -54,7 +54,7 @@ Never hardcode secrets (e.g., API keys, tokens) in your workflows. Use [GitHub S
 To ensure the stability and security of your workflows, pin the Gemini CLI action to a specific version.
 
 ```yaml
-uses: google-github-actions/run-gemini-cli@v0
+uses: google-github-actions/run-gemini-cli@main
 ```
 
 ## Creating Custom Workflows

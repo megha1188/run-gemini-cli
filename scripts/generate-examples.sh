@@ -44,7 +44,7 @@ for workflow_file in "${WORKFLOWS_DIR}"/*.yml; do
 
   # Update lines that are different in the /examples/, such as the version of the action
   sed \
-    -e "s|uses: 'megha1188/run-gemini-cli@main'|uses: 'megha1188/run-gemini-cli@v0'|g" \
+    -e "s|uses: 'megha1188/run-gemini-cli@main'|uses: 'megha1188/run-gemini-cli@main'|g" \
     "${workflow_file}" > "${example_file}"
 done
 
