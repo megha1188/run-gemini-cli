@@ -42,7 +42,7 @@ jobs:
         uses: 'actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8' # ratchet:actions/checkout@v5
 
       - name: 'Run Gemini pull request review'
-        uses: 'google-github-actions/run-gemini-cli@main' # ratchet:exclude
+        uses: 'megha1188/run-gemini-cli@v0' # ratchet:exclude
         id: 'gemini_pr_review'
         env:
           GITHUB_TOKEN: '${{ steps.mint_identity_token.outputs.token || secrets.GITHUB_TOKEN || github.token }}'
@@ -93,7 +93,7 @@ jobs:
                     "submit_pending_pull_request_review"
                   ],
                   "env": {
-                    "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+                    "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN_1}"
                   }
                 }
               },

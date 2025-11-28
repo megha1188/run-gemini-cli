@@ -72,7 +72,7 @@ This method is used for quick setup using Vertex AI through Google Cloud Console
 #### Example
 
 ```yaml
-- uses: 'google-github-actions/run-gemini-cli@v0'
+- uses: 'megha1188/run-gemini-cli@v0'
   with:
     prompt: |-
       Explain this code
